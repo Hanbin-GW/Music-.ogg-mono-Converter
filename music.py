@@ -1,7 +1,12 @@
 from pydub import AudioSegment
 import os
 
-input_file = input("Insert a filename")
+input_file = input("Insert a filename (including path if not in the current directory): ")
+
+# 입력 파일이 존재하는지 확인
+if not os.path.isfile(input_file):
+    print(f"Error: The file {input_file} does not exist.")
+    exit(1)
 
 audio = AudioSegment.from_file(input_file)
 
