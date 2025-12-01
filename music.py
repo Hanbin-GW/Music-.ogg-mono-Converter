@@ -19,6 +19,7 @@ resampled_audio = mono_audio.set_frame_rate(48000)
 output_dir = "output"
 
 if not os.path.exists(output_dir):
+    print("The Directory is not exists. create one...")
     os.makedirs(output_dir)
 
 resampled_output_file = f"output/{input_file}.ogg"
