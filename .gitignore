@@ -2,3 +2,4 @@
 /dist
 music.spec
 .venv
+.DS_Store
