@@ -47,7 +47,7 @@ try:
 
 except Exception as e:
     print("\nError occurred:")
-    print(Color.RED + e + Color.RESET)
+    print(Color.RED + str(e) + Color.RESET)
 
 finally:
-    input("\nPress Enter to exit...")
+    input(Color.GREEN + "\nPress Enter to exit..." + Color.RESET)
