@@ -4,3 +4,4 @@ music.spec
 .venv
 .DS_Store
 update.bat
+update_macos.sh
